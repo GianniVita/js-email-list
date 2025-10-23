@@ -11,7 +11,8 @@
  - Inserire un bottone che al click faccia il fetch altre 10 mail (sostituendo le altre)
  */
 const emailList = document.getElementById("emailList")
-const btn = document.getElementById("emailList")
+const btn = document.getElementById("generateBtn")
+
 function generateEmails() {
     emailList.innerHTML = '';
 for (let i = 0; i < 10; i++){
@@ -36,8 +37,9 @@ for (let i = 0; i < 10; i++){
 
 }
 
-
-btn.addEventlistener('click', generateEmails)
-
+btn.addEventListener('click',(event) =>{
+    event.preventDefault()
+    generateEmails()
+})
 
 
