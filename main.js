@@ -11,9 +11,9 @@
  - Inserire un bottone che al click faccia il fetch altre 10 mail (sostituendo le altre)
  */
 
-aixos.get('https://flynn.boolean.careers/exercises/api/random/mail')
+axios.get('https://flynn.boolean.careers/exercises/api/random/mail')
 .then(response =>{
 
-    const result = response.data
+    const result = response.data;
 })
 
